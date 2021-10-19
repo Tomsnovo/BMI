@@ -13,8 +13,11 @@ namespace BMI
             while (true)
             {
                 Console.Clear();
-
+                Console.SetCursorPosition(15, 5);
+                
                 Console.WriteLine(" BMI calculator");
+                Console.WriteLine("________________________________________________");
+                Console.WriteLine();
                 Console.Write(" Enter weight:");
                 weight = double.Parse(Console.ReadLine());
                 Console.Write(" Enter height:");
@@ -26,7 +29,6 @@ namespace BMI
                     Console.WriteLine(" nejses antihmota!");
                     break;
                 }
-
 
                 BMI = weight / (heightm * heightm);
                 BMI = Math.Round(BMI, 1);
@@ -61,7 +63,6 @@ namespace BMI
                     Console.WriteLine(" You have 3rd degree obesity!");
                 }
                 
-
                 Console.ReadLine();
             }
 
